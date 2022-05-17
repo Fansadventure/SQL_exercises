@@ -29,7 +29,7 @@ select pfad from TransitiverPfad where parentId is null
 #### Hausaufgabe 2 Rekursion
 Gegeben sei die Relation Fahrplan, die strukturell dem folgenden Beispiel gleicht:
 
-<img src="images/fahrplan.png" width=500>
+<img src="images/fahrplan.png" width=550>
 
 Formulieren Sie die folgenden Anfragen auf diese Relation in SQL. Sie können die Typen TIME für Uhrzeiten und INTERVAL für Zeitintervalle verwenden. Schreiben Sie z.B. für 10:30 Uhr: TIME '10:30:00'. Das 0-Intervall kann z.B. so konstruiert werden: INTERVAL '00:00:00'.
 
