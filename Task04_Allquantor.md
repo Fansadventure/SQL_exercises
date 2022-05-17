@@ -79,7 +79,7 @@ where s.fakultaet = p.fakultaet
 #### Hausaufgabe 3
 Gegeben sei die folgende Relation ZehnkampfD mit Athletennamen und den von ihnen erreichten Punkten in den jeweiligen Zehnkampfdisziplinen: 十项全能运动项目
 
-<img src="images/zehnkampf.png" width=150>
+<img src="images/zehnkampf.png" width=300>
 
 Finden Sie alle ZehnkämpferInnen, die in allen Disziplinen besser sind als der Athlet mit dem Namen Bolt. Formulieren Sie die Anfrage in SQL
 
@@ -143,7 +143,7 @@ select distinct name from Better b
 where b.betterThanBolt = (select count(distinct disziplin) from Zehnkampfd);
 ```
 #### Hausaufgabe 4
-*Hinweis: Diese Aufgabe wurde erstellt, bevor eine Impfung gegen COVID-19 möglich war. Deswegen werden hier ausschließlich Tests und persönliche Kontakte betrachtet.* Verwenden Sie für diese Aufgabe das **Infektionsschema**. Sie finden die Schemadefinition und eine Beispielausprägung auf der letzten Seite.
+*Hinweis: Diese Aufgabe wurde erstellt, bevor eine Impfung gegen COVID-19 möglich war. Deswegen werden hier ausschließlich Tests und persönliche Kontakte betrachtet.* Verwenden Sie für diese Aufgabe das **Infektionsschema**. Sie finden die Schemadefinition und eine Beispielausprägung [here]().
 
 In dieser Aufgabe sollen Sie ermitteln, bei welchen ungetesteten Personen ein Virustest **unnötig** ist. Ein Test für Person X ist dann unnötig, wenn:
 
