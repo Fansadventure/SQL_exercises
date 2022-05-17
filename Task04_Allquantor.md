@@ -143,7 +143,7 @@ select distinct name from Better b
 where b.betterThanBolt = (select count(distinct disziplin) from Zehnkampfd);
 ```
 #### Hausaufgabe 4
-*Hinweis: Diese Aufgabe wurde erstellt, bevor eine Impfung gegen COVID-19 möglich war. Deswegen werden hier ausschließlich Tests und persönliche Kontakte betrachtet.* Verwenden Sie für diese Aufgabe das **Infektionsschema**. Sie finden die Schemadefinition und eine Beispielausprägung [here]().
+*Hinweis: Diese Aufgabe wurde erstellt, bevor eine Impfung gegen COVID-19 möglich war. Deswegen werden hier ausschließlich Tests und persönliche Kontakte betrachtet.* Verwenden Sie für diese Aufgabe das **Infektionsschema**. Sie finden die Schemadefinition und eine Beispielausprägung [here](https://github.com/Fansadventure/SQL_exercises/blob/master/images/Infektionschema.pdf).
 
 In dieser Aufgabe sollen Sie ermitteln, bei welchen ungetesteten Personen ein Virustest **unnötig** ist. Ein Test für Person X ist dann unnötig, wenn:
 
