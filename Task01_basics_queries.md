@@ -315,12 +315,13 @@ Formulieren Sie SQL-Anfragen, die Ihre Vermutungen bestätigen oder widerlegen.
 
 ```sql
 -- a) Durch Gruppierung nach A und B kann anhand der Anzahl der Tupel ermittelt werden, ob hier eine Verletzung der Schlüsseleigenschaft vorliegt. -- Werden also mindestens zwei Tupel mit den gleichen Werten für A und B als Ergebnis ausgegeben, so bildet AB keinen Schlüssel der Relation, 
--- ist das Ergebnis der Anfrage jedoch leer, so ist AB ein Superschlüssel. */
+-- ist das Ergebnis der Anfrage jedoch leer, so ist AB ein Superschlüssel.
 select A, B from R
 group by A, B
 having count(*) > 1;
 
-/* b) In diesem Fall muss nur gelten, dass für alle Tupel, die gleiche Werte in D und E besit- zen, auch die Werte für das Attribut B gleich sind. D.h. wenn nach D und E gruppiert wird, muss die Anzahl der verschiedenen Werte für B kleiner oder gleich 1 sein. Es gilt wieder, dass das Ergebnis der Anfrage alle Tupel enthält, die die Vermutung verletzen. Ist das Ergebnis leer, so gilt DE → B.*/
+-- b) In diesem Fall muss nur gelten, dass für alle Tupel, die gleiche Werte in D und E besit- zen, auch die Werte für das Attribut B gleich sind. -- D.h. wenn nach D und E gruppiert wird, muss die Anzahl der verschiedenen Werte für B kleiner oder gleich 1 sein. Es gilt wieder, dass 
+-- das Ergebnis der Anfrage alle Tupel enthält, die die Vermutung verletzen. Ist das Ergebnis leer, so gilt DE → B.
 select D, E from R
 group by D, E
 having count(distinct B) > 1;
