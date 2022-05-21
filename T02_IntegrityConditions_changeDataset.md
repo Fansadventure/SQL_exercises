@@ -1,7 +1,7 @@
 #### Hausaufgabe 1 Integritätsbedingungen
 Gegeben sei folgendes ER-Diagramm, das User, deren Tweets, Likes und Follows modelliert, und das dazugehörige relationale Schema:
 
-<img src="images/twitter.png" width=200>
+<img src="images/twitter.png" width=500>
 
 1.1 Geben Sie SQL-Statements zum Erzeugen der Relationen an. Überlegen Sie sich dazu sinnvolle Typen für die Attribute. Verwenden Sie Angaben zu NULL und Schlüsseln (primary key, unique).
 

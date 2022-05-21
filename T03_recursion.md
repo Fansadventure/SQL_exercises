@@ -1,7 +1,7 @@
 #### Hausaufgabe 1 SQL:Rekursion
 Ein Dateisystem besteht aus Verzeichnissen und Dateien. Verzeichnisse können Dateien und (rekursiv) Verzeichnisse enthalten. Hier ein Ausschnitt der Relation filesys, die ein solches Dateisystem modelliert:
 
-<img src="images/filesys.png" width=150>
+<img src="images/filesys.png" width=200>
 
 Jeder Eintrag im Dateisystem hat eine eindeutige id und einen Namen, der nicht eindeutig sein muss. Außer- dem haben Einträge das Attribut parentId, in dem die id des übergeordneten Verzeichnisses gespeichert ist.
 8 9
@@ -29,7 +29,7 @@ select pfad from TransitiverPfad where parentId is null
 #### Hausaufgabe 2 Rekursion
 Gegeben sei die Relation Fahrplan, die strukturell dem folgenden Beispiel gleicht:
 
-<img src="images/fahrplan.png" width=150>
+<img src="images/fahrplan.png" width=550>
 
 Formulieren Sie die folgenden Anfragen auf diese Relation in SQL. Sie können die Typen TIME für Uhrzeiten und INTERVAL für Zeitintervalle verwenden. Schreiben Sie z.B. für 10:30 Uhr: TIME '10:30:00'. Das 0-Intervall kann z.B. so konstruiert werden: INTERVAL '00:00:00'.
 
